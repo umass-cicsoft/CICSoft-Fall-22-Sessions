@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CICSoft Web Clicker</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="clicker-body">
+            <div id="clicker-main">
+                <div id="clicker-display" class="round" onclick="clear_click()">
+                    <span id="total">0</span>
+                </div>
+                <img
+                    class="round"
+                    src="https://img.freepik.com/premium-vector/hand-click-icon-trendy-outline-style-design-vector-graphic-illustration-click-symbol-website-design-logo-app-ui_175838-2817.jpg"
+                    width="150"
+                    onclick="increment_click()"
+                />
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

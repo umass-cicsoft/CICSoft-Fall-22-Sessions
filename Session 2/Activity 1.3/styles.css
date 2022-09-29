@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap");
+
+body {
+    font-family: "Inter Tight";
+    background-color: limegreen;
+    margin: 0px;
+}
+
+#clicker-body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#clicker-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: cornsilk;
+    border: 2px solid #4d5259;
+}
+
+#clicker-display {
+    display: flex;
+    width: 90%;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0rem;
+    background-color: white;
+    border: 2px solid #4d5259;
+    font-size: 3rem !important;
+}
+
+.round {
+    font-size: 12px;
+    color: #4d5259;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    background: #ffffff;
+    border: 2px solid #4d5259;
+    border-radius: 100px;
+}
+
+.round:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px 0 0 #4d5259;
+}
