@@ -1,4 +1,4 @@
-count = 0;
+count = document.getElementById("total").innerHTML;
 increment = 1;
 
 function increment_click() {
