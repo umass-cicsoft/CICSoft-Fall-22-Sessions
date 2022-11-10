@@ -1,14 +1,14 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
-import Home from './pages/Home';
 
 const App = () => {
   return (
     <React.Fragment>
       <NavigationBar />
-      <Home />
+      <Outlet />
     </React.Fragment>
   );
-}
+};
 
 export default App;
