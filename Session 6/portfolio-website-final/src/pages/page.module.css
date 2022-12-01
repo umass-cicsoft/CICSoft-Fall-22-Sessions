@@ -1,13 +1,11 @@
 .heading {
   font-weight: 900;
   font-size: 8em;
-  color: royalblue;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  background-color: #62e5e3;
   height: 100vh;
   width: 100vw;
   justify-content: center;

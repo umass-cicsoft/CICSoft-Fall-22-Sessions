@@ -1,16 +1,37 @@
-import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import React, { useContext } from 'react';
+import { Container, Nav, Navbar, ToggleButton } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import { ThemeContext } from '../../ThemeContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faSun, faMoon} from '@fortawesome/free-solid-svg-icons';
 import styles from './index.module.css';
 
 const NavigationBar = () => {
+  const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
   return (
-    <Navbar bg="dark" variant="dark" fixed="top" expand="lg">
+    <Navbar
+      bg={isDarkMode ? 'dark' : 'light'}
+      variant={isDarkMode ? 'dark' : 'light'}
+      fixed="top"
+      expand="lg"
+    >
       <Container fluid>
         <Navbar.Brand as={Link} to="/" className={styles.personName}>
           Person Name
         </Navbar.Brand>
+        <ToggleButton
+          type="switch"
+          variant={isDarkMode ? 'dark' : 'light'}
+          value={isDarkMode}
+          checked={isDarkMode}
+          onClick={() => toggleDarkMode()}
+        >
+          {isDarkMode ? (
+            <FontAwesomeIcon icon={faSun} style={{color: "#FFD046"}} />
+          ) : (
+            <FontAwesomeIcon icon={faMoon} />
+          )}
+        </ToggleButton>
         <Navbar.Toggle aria-controls="portfolio-navbar-nav" />
         <Navbar.Collapse id="portfolio-navbar-nav">
           <Nav className="ms-auto">
