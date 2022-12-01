@@ -3,7 +3,7 @@ import { Container, Nav, Navbar, ToggleButton } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../ThemeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faSun, faMoon} from '@fortawesome/free-solid-svg-icons';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import styles from './index.module.css';
 
 const NavigationBar = () => {
@@ -27,7 +27,7 @@ const NavigationBar = () => {
           onClick={() => toggleDarkMode()}
         >
           {isDarkMode ? (
-            <FontAwesomeIcon icon={faSun} style={{color: "#FFD046"}} />
+            <FontAwesomeIcon icon={faSun} style={{ color: '#FFD046' }} />
           ) : (
             <FontAwesomeIcon icon={faMoon} />
           )}
